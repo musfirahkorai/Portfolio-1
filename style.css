@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: rgb(253, 216, 53);
+}
+
+/* Reset */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color:rgb(253, 216, 53);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+}
+
+.logo {
+    font-family: 'BigFont', sans-serif;
+}
+
+nav a {
+    font-family: 'StableFont', sans-serif;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: grey;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: transform 0.3s;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/*Intro*/
+/* Color Variables */
+:root {
+  --dark: rgb(20, 20, 20);
+  --yellow: rgb(253, 216, 53);
+  --blue: rgb(98, 0, 234);
+  --left-color: var(--yellow);
+  --right-color: var(--dark);
+}
+
+/* Base Styles */
+body,
+main {
+  background-color: var(--dark);
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+.hero-wrapper,
+.hero-side .title,
+.cool > .letter {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+.hero-wrapper,
+.hero-side {
+  height: 100%;
+}
+
+.hero-side {
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+/* Hero Titles */
+.hero-side .title {
+  font-size: 8vw;
+  margin: 0px 10vw;
+  width: 80vw;
+}
+
+/* Cool Text */
+.hero-side .cool {
+  font-size: 1.3em;
+  line-height: 0.8em;
+}
+
+.cool > .letter {
+  display: inline-block;
+  transition: transform 350ms ease;
+}
+
+/* Hover Effects */
+.cool:hover > .letter {
+  transition-duration: 800ms;
+}
+
+.cool:hover > .letter:nth-child(n) {
+  transform: translate(0%, 20%) rotate(-3deg);
+}
+
+/* Side Specific Styles */
+#left-side {
+  background-color: var(--left-color);
+  width: 90%;
+  z-index: 2;
+  transition: 0.15s;
+  color: white;
+}
+
+#left-side .cool {
+  color: var(--right-color);
+}
+
+#right-side {
+  background-color: var(--right-color);
+}
+
+#right-side .title {
+  color: var(--yellow);
+}
+
+#right-side .cool,
+#last-name {
+  color: white;
+}
+
+#first-name {
+  color: var(--dark);
+}
+
+.about-section {
+    background-color: rgb(253, 216, 53);
+    text-align: center;
+    padding: 50px;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #010957;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#img1 {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2, h5, p {
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+#about {
+    background-color:rgb(253, 216, 53);
+    color: #ffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.head {
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    font-size: 2rem;
+    color: yellow;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutText {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.aboutText h2 {
+    color: orange;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.aboutText p {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.aboutText .me {
+    font-size: 0.8rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 111px;
+}
+.mainText{
+    margin-top: 84px;
+}
+.mainText h1{
+    font-size: 68px;
+}
+.mainText p{
+    font-size: 17px;
+    margin-top: 22px;
+    color: white;
+}
+.mainText h3{
+    font-size: 26px;
+}
+.mainText #b0{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(253, 216, 53);
+    color: white;
+    border:radius 5px white;
+    margin-top: 22px;
+    font-size: 20px;
+
+}
+#app{
+    color: white;
+}
+.mainText #b0 :hover{
+    color: yellow;
+    background-color: orange;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 100px; 
+    background-color: rgb(253, 216, 53);
+}
+.about-img img{
+    padding-bottom: 10%;
+    margin-left: 120px;
+    max-width: 350px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 50px;
+}
+.about-text h2 span{
+    color: yellow;
+}
+.about-text h4{
+   font-size: 26px;
+   font-weight: 600;
+   color:white;
+   line-height: 1.7;
+   margin: 15px 0 30px;
+}
+.about-text p{
+    color:rgb(177, 147, 14);
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
